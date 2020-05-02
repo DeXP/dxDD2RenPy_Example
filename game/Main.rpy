@@ -1,7 +1,7 @@
 #
-# dxDD2RenPy 0.8.0 by DeXPeriX
+# dxDD2RenPy 0.9.0 by DeXPeriX
 # The file was generated from Main.json
-# Generation date: 27.04.2020 19:59:08
+# Generation date: 02.05.2020 11:50:05
 # Please do not edit the file manually
 # All changes will be lost after regeneration
 # You can find more info about dxDD2RenPy on https://dexp.in/dxDD2RenPy
@@ -17,7 +17,6 @@ label Main:
     return
 
 label node9975669:
-    window hide
 
     menu:
         "What topic do you interested in?"
@@ -32,6 +31,14 @@ label node9975669:
 
         "Loops and chances":
             call Loops
+            jump node9975669
+
+        "Nvl mode" if False:
+            call NvlMode
+            jump node9975669
+
+        "Monologue":
+            call Monologue
             jump node9975669
 
         "Nothing":

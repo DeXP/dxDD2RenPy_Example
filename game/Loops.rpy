@@ -1,7 +1,7 @@
 #
-# dxDD2RenPy 0.8.0 by DeXPeriX
+# dxDD2RenPy 0.9.0 by DeXPeriX
 # The file was generated from Loops.json
-# Generation date: 27.04.2020 19:59:08
+# Generation date: 02.05.2020 11:50:05
 # Please do not edit the file manually
 # All changes will be lost after regeneration
 # You can find more info about dxDD2RenPy on https://dexp.in/dxDD2RenPy
@@ -14,7 +14,6 @@ label Loops:
     return
 
 label node9900232:
-    window hide
     while count9900232 < 2:
         $ count9900232 += 1
         DeXP "You will read this message 2 times. With random pose change each time"
@@ -38,7 +37,6 @@ label node9900232:
     return
 
 label node1790898:
-    window hide
     $ random1790898 = renpy.random.randint(1, 100)
     if random1790898 <= 70:
         jump node9435787
@@ -48,7 +46,6 @@ label node1790898:
     return
 
 label node9435787:
-    window hide
     DeXP "Pose changed"
     jump node9900232
     return
